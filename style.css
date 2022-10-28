@@ -111,15 +111,23 @@ h1 {
     color: #404040;
 }
 
-.like-button:not(.like-button--liked):hover {
-    background-color: #e3e3e3
+.like-button:not(.like-button.cliked):hover {
+    background-color: #e3e3e3 ;
 }
 
 .like-button__label {
     font-weight: bold;
 }
 
-.like-button--liked {
-    color: #0CD977;
-    cursor: default;
+.like-button.clicked {
+    color: #0CD977 !important;
+    cursor: default !important;
+}
+
+.like-button.clicked:hover {
+    background-color: #989898 !important ;
+}
+
+.hide{
+    display: none;
 }
